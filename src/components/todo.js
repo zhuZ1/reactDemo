@@ -46,7 +46,7 @@ class todo extends React.Component{
                     {
                         this.state.list.map((item, key)=>{
                             return <li key={key}
-                                       onClick={this.handleDelete.bind(this, key)}
+                                       onClick={() => this.handleDelete(key)}
                             > {item}</li>
                         })
                     }
@@ -60,10 +60,3 @@ export default todo
 
 
 
-let arr = [{a:1}, {b:2}, {c:3}],
-    obj = {d: 4}
-//实现{a:1,b:2,c3}
-// arr.splice(3, 0, obj)
-let [{a}, {b}, {c}, {d}] = [...arr, obj]
-let newObj = {a, b, c, d}
-console.log(newObj)

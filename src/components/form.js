@@ -6,7 +6,7 @@ class Form extends React.Component{
         this.state={
             inputVal: '',
             sex: 1,
-            cities: ['北京', '上海', '深圳'],
+            cities: ['北京', '上海', '深圳', '南京'],
             curCity: '',
             hobbies: [{
                 'title': '睡觉',
