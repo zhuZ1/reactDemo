@@ -1,5 +1,5 @@
 import React from 'react'
-import storage from '../model/storage'
+import  {storage} from '../model/storage'
 
 class TodoList extends React.Component{
     constructor(props){
@@ -21,6 +21,7 @@ class TodoList extends React.Component{
             checked: false
 
         })
+        console.log('add事件')
         storage.set('todoList', this.state.listArr)
         this.setState({
             proName: '',
